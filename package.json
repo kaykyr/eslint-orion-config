@@ -1,5 +1,5 @@
 {
-    "name": "orion-eslint-config",
+    "name": "eslint-config-orion",
     "version": "2.0.1",
     "private": false,
     "description": "ESLint configuration used by Orion Tech Team.",
