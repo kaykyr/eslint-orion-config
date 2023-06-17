@@ -1,6 +1,6 @@
 ```
 {
-	"extends": "@rocketseat/eslint-config/react",
-	"extends": "@rocketseat/eslint-config/node"
+	"extends": "orion-eslint-config/react",
+	"extends": "orion-eslint-config/node"
 }
 ```
