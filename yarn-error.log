@@ -1,0 +1,70 @@
+Arguments: 
+  /Users/kaykyramos/.nvm/versions/node/v18.15.0/bin/node /Users/kaykyramos/.nvm/versions/node/v18.15.0/bin/yarn publish --access public
+
+PATH: 
+  /Users/kaykyramos/.nvm/versions/node/v18.15.0/bin:/opt/homebrew/bin:/Users/kaykyramos/.cargo/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/usr/local/go/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.15.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/-/user/org.couchdb.user:kaykyramos: failed to authenticate: Could not authenticate kaykyramos: bad password
+      at params.callback [as _callback] (/Users/kaykyramos/.nvm/versions/node/v18.15.0/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at self.callback (/Users/kaykyramos/.nvm/versions/node/v18.15.0/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/Users/kaykyramos/.nvm/versions/node/v18.15.0/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/Users/kaykyramos/.nvm/versions/node/v18.15.0/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+      "name": "eslint-config-orion",
+      "version": "2.0.2",
+      "private": false,
+      "description": "ESLint configuration used by Orion Tech Team.",
+      "main": "index.js",
+      "license": "MIT",
+      "repository": {
+          "url": "kaykyr/eslint-config-orion"
+      },
+      "dependencies": {
+          "@typescript-eslint/eslint-plugin": "^5.25.0",
+          "@typescript-eslint/parser": "^5.25.0",
+          "eslint": "^7.23.0 || ^8.0.0",
+          "eslint-config-prettier": "^8.5.0",
+          "eslint-config-standard": "^17.0.0",
+          "eslint-plugin-import": "^2.26.0",
+          "eslint-plugin-jsx-a11y": "^6.5.1",
+          "eslint-plugin-n": "^15.2.0",
+          "eslint-plugin-prettier": "^4.0.0",
+          "eslint-plugin-promise": "^6.0.0",
+          "eslint-plugin-react": "^7.30.0",
+          "eslint-plugin-react-hooks": "^4.5.0",
+          "prettier": "^2.6.2"
+      },
+      "peerDependencies": {
+          "eslint": "^7.23.0 || ^8.0.0",
+          "typescript": ">=3.3.1"
+      },
+      "peerDependenciesMeta": {
+          "typescript": {
+              "optional": true
+          }
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
