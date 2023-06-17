@@ -6,7 +6,7 @@
     "main": "index.js",
     "license": "MIT",
     "repository": {
-        "url": "kaykyr/eslint-orion-config"
+        "url": "kaykyr/eslint-config-orion"
     },
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^5.25.0",
