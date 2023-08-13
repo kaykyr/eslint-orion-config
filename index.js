@@ -12,23 +12,24 @@ module.exports = {
     plugins: ["@typescript-eslint"],
     rules: {
         "prettier/prettier": [
-        "error",
-        {
-            printWidth: 80,
-            tabWidth: 4,
-            singleQuote: true,
-            trailingComma: "all",
-            arrowParens: "always",
-            semi: false,
-        },
+            "error",
+            {
+                printWidth: 80,
+                tabWidth: 4,
+                singleQuote: true,
+                trailingComma: "all",
+                arrowParens: "always",
+                semi: false,
+            },
         ],
         semi: ['error', 'never'],
         'semi-spacing': 'off',
         'semi-style': 'off',
+        'no-useless-constructor': 'off',
     },
     settings: {
         "import/parsers": {
-        [require.resolve("@typescript-eslint/parser")]: [".ts", ".tsx", ".d.ts"],
+            [require.resolve("@typescript-eslint/parser")]: [".ts", ".tsx", ".d.ts"],
         },
     },
 };
