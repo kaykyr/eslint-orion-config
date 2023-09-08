@@ -1,28 +1,27 @@
 module.exports = {
     env: {
-        es2023: true,
+        es2021: true,
         node: true,
     },
-    extends: ['standard', 'plugin:prettier/recommended'],
-    parser: '@typescript-eslint/parser',
+    extends: ["standard", "plugin:prettier/recommended"],
+    parser: "@typescript-eslint/parser",
     parserOptions: {
-        ecmaVersion: 'latest',
-        sourceType: 'module',
+        ecmaVersion: "latest",
+        sourceType: "module",
     },
-    plugins: [
-        '@typescript-eslint',
-        '@typescript-eslint/recommended',
-        'prettier/@typescript-eslint'
-    ],
+    plugins: ["@typescript-eslint"],
     rules: {
-        'prettier/prettier': [
-            'error',
+        "prettier/prettier": [
+            "error",
             {
-                'singleQuote': true,
-                'trailingComma': 'all',
-                'semi': false,
-                'useTabs': true,
-                'tabWidth': 4
+                printWidth: 80,
+                tabWidth: 4,
+                useTabs: true,
+                useTab: true,
+                singleQuote: true,
+                trailingComma: "all",
+                arrowParens: "always",
+                semi: false,
             },
         ],
         semi: ['error', 'never'],
@@ -31,8 +30,8 @@ module.exports = {
         'no-useless-constructor': 'off',
     },
     settings: {
-        'import/parsers': {
-            [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
+        "import/parsers": {
+            [require.resolve("@typescript-eslint/parser")]: [".ts", ".tsx", ".d.ts"],
         },
     },
 };
