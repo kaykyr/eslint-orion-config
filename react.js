@@ -24,7 +24,7 @@ module.exports = {
         '@typescript-eslint'
     ],
     rules: {
-        'prettier/prettier': ['error', {
+        'prettier/prettier': ['off', {
             printWidth: 140,
             trailingComma: 'all',
             arrowParens: 'always',
@@ -38,41 +38,7 @@ module.exports = {
             tabWidth: 4,
             requireConfig: false,
             bracketSpacing: true,
-            jsxBracketSameLine: false,
-            "editor.codeActionsOnSave": {
-                "source.fixAll.eslint": true,
-                "source.addMissingImports": true,
-            },
-            "editor.detectIndentation": true,
-            "[json]": {
-                "editor.defaultFormatter": "vscode.json-language-features"
-            },
-            "[javascript]": {
-                "editor.codeActionsOnSave": {
-                    "source.fixAll.eslint": true,
-                    "source.addMissingImports": true,
-                },
-                "editor.defaultFormatter": "vscode.typescript-language-features",
-            },
-            "[javascriptreact]": {
-                "editor.codeActionsOnSave": {
-                    "source.fixAll.eslint": true,
-                    "source.addMissingImports": true,
-                },
-            },
-            "tailwindCSS.includeLanguages": {
-                "typescript": "javascript", // if you are using typescript
-                "typescriptreact": "javascript" // if you are using typescript with react
-            },
-            "editor.quickSuggestions": {
-                "strings": true // forces VS Code to trigger completions when editing "string" content
-            },
-            "editor.tabSize": 4,
-            "explorer.confirmDelete": true,
-            "editor.rulers": [
-                160,
-                140
-            ],
+            jsxBracketSameLine: false
         }],
         'react/react-in-jsx-scope': 'off',
         'react/prop-types': 'off',
