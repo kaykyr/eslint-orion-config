@@ -1,14 +1,15 @@
 module.exports = {
     env: {
         browser: true,
-        es2021: true,
+        es2023: true,
         jest: true,
     },
     extends: [
-        'plugin:react/recommended',
-        'plugin:react-hooks/recommended',
         'standard',
+        'next/core-web-vitals',
+        'plugin:react/recommended',
         'plugin:prettier/recommended',
+        'plugin:react-hooks/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -19,27 +20,28 @@ module.exports = {
         sourceType: 'module'
     },
     plugins: [
+        '@typescript-eslint',
+        '@typescript-eslint/recommended',
+        'prettier/@typescript-eslint',
         'react',
         'jsx-a11y',
         '@typescript-eslint'
     ],
     rules: {
         'prettier/prettier': ["error", {
-            'printWidth': 80,
-            'tabWidth': 4,
-            'singleQuote': true,
-            'trailingComma': 'all',
-            'arrowParens': 'always',
-            'semi': false,
-            'endOfLine': 'auto',
+            "singleQuote": true,
+            "trailingComma": "all",
+            "semi": false,
+            "useTabs": true,
+            "tabWidth": 4
         }],
         'react/react-in-jsx-scope': 'off',
         'react/prop-types': 'off',
         'jsx-a11y/alt-text': [
             'warn',
             {
-            elements: ['img'],
-            img: ['Image'],
+                elements: ['img'],
+                img: ['Image'],
             },
         ],
         'jsx-a11y/aria-props': 'warn',
