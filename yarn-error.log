@@ -1,0 +1,74 @@
+Arguments: 
+  /Users/kaykyramos/.nvm/versions/node/v18.17.1/bin/node /Users/kaykyramos/.nvm/versions/node/v18.17.1/bin/yarn publish
+
+PATH: 
+  /Users/kaykyramos/.local/share/zinit/polaris/bin:/Users/kaykyramos/.nvm/versions/node/v18.17.1/bin:/Users/kaykyramos/.vscode/extensions/stateful.runme-1.10.0-darwin-x64/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/go/bin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/kaykyramos/.vscode/extensions/stateful.runme-1.10.0-darwin-x64/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.17.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/-/user/org.couchdb.user:kaykyr: That email has already been registered.
+      at params.callback [as _callback] (/Users/kaykyramos/.nvm/versions/node/v18.17.1/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at self.callback (/Users/kaykyramos/.nvm/versions/node/v18.17.1/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:514:28)
+      at Request.<anonymous> (/Users/kaykyramos/.nvm/versions/node/v18.17.1/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:514:28)
+      at IncomingMessage.<anonymous> (/Users/kaykyramos/.nvm/versions/node/v18.17.1/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:628:28)
+      at IncomingMessage.emit (node:events:526:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+      "name": "@kaykyramos/eslint-config",
+      "version": "1.0.2",
+      "private": false,
+      "description": "ESLint configuration used by Orion Tech Team.",
+      "main": "index.js",
+      "license": "MIT",
+      "repository": {
+          "url": "kaykyr/eslint-config-orion"
+      },
+      "keywords": [
+          "eslint",
+          "eslintconfig"
+      ],
+      "dependencies": {
+          "@typescript-eslint/eslint-plugin": "^5.25.0",
+          "@typescript-eslint/parser": "^5.25.0",
+          "eslint": "^7.23.0 || ^8.0.0",
+          "eslint-config-prettier": "^8.5.0",
+          "eslint-config-standard": "^17.0.0",
+          "eslint-plugin-import": "^2.26.0",
+          "eslint-plugin-jsx-a11y": "^6.5.1",
+          "eslint-plugin-n": "^15.2.0",
+          "eslint-plugin-prettier": "^4.0.0",
+          "eslint-plugin-promise": "^6.0.0",
+          "eslint-plugin-react": "^7.30.0",
+          "eslint-plugin-react-hooks": "^4.5.0",
+          "prettier": "^2.6.2"
+      },
+      "peerDependencies": {
+          "eslint": "^7.23.0 || ^8.0.0",
+          "typescript": ">=3.3.1"
+      },
+      "peerDependenciesMeta": {
+          "typescript": {
+              "optional": true
+          }
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
