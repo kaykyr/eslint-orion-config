@@ -22,6 +22,40 @@ module.exports = {
                 trailingComma: "all",
                 arrowParens: "always",
                 semi: false,
+                "editor.codeActionsOnSave": {
+                    "source.fixAll.eslint": true,
+                    "source.addMissingImports": true,
+                },
+                "editor.detectIndentation": true,
+                "[json]": {
+                    "editor.defaultFormatter": "vscode.json-language-features"
+                },
+                "[javascript]": {
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll.eslint": true,
+                        "source.addMissingImports": true,
+                    },
+                    "editor.defaultFormatter": "vscode.typescript-language-features",
+                },
+                "[javascriptreact]": {
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll.eslint": true,
+                        "source.addMissingImports": true,
+                    },
+                },
+                "tailwindCSS.includeLanguages": {
+                    "typescript": "javascript", // if you are using typescript
+                    "typescriptreact": "javascript" // if you are using typescript with react
+                },
+                "editor.quickSuggestions": {
+                    "strings": true // forces VS Code to trigger completions when editing "string" content
+                },
+                "editor.tabSize": 4,
+                "explorer.confirmDelete": true,
+                "editor.rulers": [
+                    160,
+                    140
+                ],
             },
         ],
         semi: ['error', 'never'],
