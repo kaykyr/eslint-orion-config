@@ -57,6 +57,7 @@ module.exports = {
         ],
         "no-useless-constructor": "off",
         "no-new": "off",
+        "no-unused-vars": "off",
         "semi": "error",
         'jsx-a11y/aria-props': 'warn',
         'jsx-a11y/aria-proptypes': 'warn',

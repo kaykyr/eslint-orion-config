@@ -55,6 +55,7 @@ module.exports = {
         "no-useless-constructor": "off",
         "no-new": "off",
         "camelcase": "off",
+        "no-unused-vars": "off",
         "semicolon": "warn",
         'jsx-a11y/aria-props': 'warn',
         'jsx-a11y/aria-proptypes': 'warn',
