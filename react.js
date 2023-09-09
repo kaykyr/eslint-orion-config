@@ -1,45 +1,38 @@
 module.exports = {
     env: {
-        browser: true,
         es2021: true,
+        node: true,
+        jest: true,
+        browser: true,
         jest: true,
     },
     extends: [
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
-        'plugin:prettier-plugin-tailwindcss/recommended',
         'standard',
         'plugin:prettier/recommended',
+        "prettier"
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
             jsx: true
         },
-        ecmaVersion: 'latest',
-        sourceType: 'module'
+        ecmaVersion: 12,
+        sourceType: "module"
     },
     plugins: [
         'react',
         'jsx-a11y',
-        '@typescript-eslint'
+        '@typescript-eslint',
+        'prettier',
+        'import-helpers'
     ],
     rules: {
-        'prettier/prettier': ['off', {
-            printWidth: 140,
-            trailingComma: 'all',
-            arrowParens: 'always',
-            semi: false,
-            endOfLine: 'auto',
-            singleQuote: true,
-            eslintIntegration: true,
-            useTabs: true,
-            useTab: true,
-            proseWrap: 'always',
-            tabWidth: 4,
-            requireConfig: false,
-            bracketSpacing: true,
-            jsxBracketSameLine: false
+        'prettier/prettier': ['error', {
+            "trailingComma": "all",
+            "semi": false,
+            "singleQuote": true
         }],
         'react/react-in-jsx-scope': 'off',
         'react/prop-types': 'off',
@@ -50,6 +43,21 @@ module.exports = {
                 img: ['Image'],
             },
         ],
+        "import-helpers/order-imports": [
+            "warn",
+            {
+                "newlinesBetween": "always",
+                "groups": [
+                    ["module", "absolute"],
+                    "/^@/",
+                    ["parent", "sibling", "index"]
+                ],
+                "alphabetize": { "order": "asc", "ignoreCase": true }
+            }
+        ],
+        "no-useless-constructor": "off",
+        "no-new": "off",
+        "semi": "error",
         'jsx-a11y/aria-props': 'warn',
         'jsx-a11y/aria-proptypes': 'warn',
         'jsx-a11y/aria-unsupported-elements': 'warn',
@@ -63,5 +71,5 @@ module.exports = {
         'import/parsers': {
             [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
         },
-    }
+    },
 }

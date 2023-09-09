@@ -2,36 +2,72 @@ module.exports = {
     env: {
         es2021: true,
         node: true,
+        jest: true,
+        browser: true,
+        jest: true,
     },
-    extends: ['standard', 'plugin:prettier/recommended'],
+    extends: [
+        'plugin:react/recommended',
+        'plugin:react-hooks/recommended',
+        'plugin:prettier-plugin-tailwindcss/recommended',
+        'standard',
+        'plugin:prettier/recommended',
+        "prettier"
+    ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
-        ecmaVersion: 'latest',
-        sourceType: 'module',
+        ecmaFeatures: {
+            jsx: true
+        },
+        ecmaVersion: 12,
+        sourceType: "module"
     },
-    plugins: ['@typescript-eslint'],
+    plugins: [
+        'react',
+        'jsx-a11y',
+        '@typescript-eslint',
+        'prettier',
+        'import-helpers'
+    ],
     rules: {
-        'prettier/prettier': [
-            'off',
+        'prettier/prettier': 'error',
+        'react/react-in-jsx-scope': 'off',
+        'react/prop-types': 'off',
+        'jsx-a11y/alt-text': [
+            'warn',
             {
-                printWidth: 80,
-                tabWidth: 4,
-                useTabs: true,
-                useTab: true,
-                singleQuote: true,
-                trailingComma: 'all',
-                arrowParens: 'always',
-                semi: false,
+                elements: ['img'],
+                img: ['Image'],
             },
         ],
-        semi: ['error', 'never'],
-        'semi-spacing': 'off',
-        'semi-style': 'off',
-        'no-useless-constructor': 'off',
+        "import-helpers/order-imports": [
+            "warn",
+            {
+                "newlinesBetween": "always",
+                "groups": [
+                    ["module", "absolute"],
+                    "/^@/",
+                    ["parent", "sibling", "index"]
+                ],
+                "alphabetize": { "order": "asc", "ignoreCase": true }
+            }
+        ],
+        "no-useless-constructor": "off",
+        "no-new": "off",
+        "camelcase": "off",
+        "semicolon": "warn",
+        'jsx-a11y/aria-props': 'warn',
+        'jsx-a11y/aria-proptypes': 'warn',
+        'jsx-a11y/aria-unsupported-elements': 'warn',
+        'jsx-a11y/role-has-required-aria-props': 'warn',
+        'jsx-a11y/role-supports-aria-props': 'warn',
     },
     settings: {
+        react: {
+            version: 'detect',
+        },
         'import/parsers': {
             [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
         },
     },
-};
+}
