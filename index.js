@@ -56,7 +56,7 @@ module.exports = {
         "no-new": "off",
         "camelcase": "off",
         "no-unused-vars": "off",
-        "semicolon": "warn",
+        "semicolon": "error",
         'jsx-a11y/aria-props': 'warn',
         'jsx-a11y/aria-proptypes': 'warn',
         'jsx-a11y/aria-unsupported-elements': 'warn',
