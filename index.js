@@ -6,13 +6,7 @@ module.exports = {
     browser: true,
     jest: true,
   },
-  extends: [
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "standard",
-    "plugin:prettier/recommended",
-    "prettier",
-  ],
+  extends: ["standard", "plugin:prettier/recommended", "prettier"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
@@ -21,24 +15,9 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins: [
-    "react",
-    "jsx-a11y",
-    "@typescript-eslint",
-    "prettier",
-    "import-helpers",
-  ],
+  plugins: ["@typescript-eslint", "prettier", "import-helpers"],
   rules: {
     "prettier/prettier": "error",
-    "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off",
-    "jsx-a11y/alt-text": [
-      "warn",
-      {
-        elements: ["img"],
-        img: ["Image"],
-      },
-    ],
     "import-helpers/order-imports": [
       "warn",
       {
@@ -59,18 +38,13 @@ module.exports = {
     "no-unused-vars": "off",
     "no-case-declarations": "off",
     "array-callback-return": "off",
-    "jsx-a11y/aria-props": "warn",
-    "jsx-a11y/aria-proptypes": "warn",
-    "jsx-a11y/aria-unsupported-elements": "warn",
-    "jsx-a11y/role-has-required-aria-props": "warn",
-    "jsx-a11y/role-supports-aria-props": "warn",
   },
   settings: {
     react: {
       version: "detect",
     },
     "import/parsers": {
-      [require.resolve("@typescript-eslint/parser")]: [".ts", ".tsx", ".d.ts"],
+      [require.resolve("@typescript-eslint/parser")]: [".ts", ".d.ts"],
     },
   },
 };
