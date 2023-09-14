@@ -29,14 +29,6 @@ module.exports = {
     "import-helpers",
   ],
   rules: {
-    "prettier/prettier": [
-      "error",
-      {
-        trailingComma: "all",
-        semi: false,
-        singleQuote: true,
-      },
-    ],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "jsx-a11y/alt-text": [
