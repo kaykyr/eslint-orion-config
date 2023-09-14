@@ -66,7 +66,6 @@ module.exports = {
     "no-unused-vars": "off",
     "no-case-declarations": "off",
     "array-callback-return": "off",
-    semicolon: "error",
     "jsx-a11y/aria-props": "warn",
     "jsx-a11y/aria-proptypes": "warn",
     "jsx-a11y/aria-unsupported-elements": "warn",
