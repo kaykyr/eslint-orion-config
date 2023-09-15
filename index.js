@@ -39,6 +39,7 @@ module.exports = {
     "no-use-before-define": "off",
     "no-case-declarations": "off",
     "array-callback-return": "off",
+    "no-extend-native": "off",
   },
   settings: {
     react: {
