@@ -57,6 +57,7 @@ module.exports = {
     "no-prototype-builtins": "off",
     "no-unused-vars": "off",
     "no-case-declarations": "off",
+    "exhaustive-deps": "off",
     "array-callback-return": "off",
     "jsx-a11y/aria-props": "warn",
     "jsx-a11y/aria-proptypes": "warn",
