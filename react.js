@@ -56,6 +56,7 @@ module.exports = {
     "no-void": "off",
     "no-prototype-builtins": "off",
     "no-unused-vars": "off",
+    "no-undef": "off",
     "no-case-declarations": "off",
     "react-hooks/exhaustive-deps": "off",
     "array-callback-return": "off",
