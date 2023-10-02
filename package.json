@@ -1,6 +1,6 @@
 {
     "name": "@kaykyramos/eslint-config",
-    "version": "1.6.0",
+    "version": "1.7.0",
     "private": false,
     "description": "ESLint configuration used by Orion Tech Team.",
     "main": "index.js",
