@@ -59,6 +59,7 @@ module.exports = {
     "no-undef": "off",
     "no-tabs": "off",
     "multiline-ternary": "off",
+    "no-use-before-define": "off",
     "import/no-anonymous-default-export": "off",
     "no-mixed-spaces-and-tabs": "off",
     indent: "off",
