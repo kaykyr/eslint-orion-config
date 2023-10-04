@@ -36,6 +36,7 @@ module.exports = {
     "no-void": "off",
     "no-prototype-builtins": "off",
     "no-unused-vars": "off",
+    "no-useless-escape": "off",
     "no-use-before-define": "off",
     "no-case-declarations": "off",
     "array-callback-return": "off",
