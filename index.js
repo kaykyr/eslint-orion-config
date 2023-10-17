@@ -42,6 +42,7 @@ module.exports = {
     "array-callback-return": "off",
     "no-unreachable-loop": "off",
     "no-extend-native": "off",
+    "no-async-promise-executor": "off",
   },
   settings: {
     react: {
