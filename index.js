@@ -41,6 +41,8 @@ module.exports = {
     "no-case-declarations": "off",
     "array-callback-return": "off",
     "no-new-require": "off",
+    "new-cap": "off",
+    "n/no-new-require": "off",
     "no-unreachable-loop": "off",
     "no-extend-native": "off",
     "no-async-promise-executor": "off",
