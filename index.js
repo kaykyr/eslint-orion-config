@@ -40,6 +40,7 @@ module.exports = {
     "no-use-before-define": "off",
     "no-case-declarations": "off",
     "array-callback-return": "off",
+    "no-new-require": "off",
     "no-unreachable-loop": "off",
     "no-extend-native": "off",
     "no-async-promise-executor": "off",
