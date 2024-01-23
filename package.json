@@ -1,12 +1,11 @@
 {
     "name": "@kaykyramos/eslint-config",
-    "version": "2.1.2",
-    "private": false,
+    "version": "2.2.0",
     "description": "ESLint configuration used by Orion Tech Team.",
     "main": "index.js",
     "license": "MIT",
     "repository": {
-        "url": "kaykyr/eslint-config-orion"
+        "url": "git+https://github.com/kaykyr/eslint-config-orion.git"
     },
     "keywords": [
         "eslint",
