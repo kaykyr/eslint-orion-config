@@ -28,6 +28,7 @@ module.exports = {
     "import-helpers",
   ],
   rules: {
+    "no-multi-spaces": "off",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "jsx-a11y/alt-text": [
@@ -49,6 +50,7 @@ module.exports = {
         alphabetize: { order: "asc", ignoreCase: true },
       },
     ],
+    "no-async-promise-executor": "off",
     "no-useless-constructor": "off",
     "no-new": "off",
     camelcase: "off",
