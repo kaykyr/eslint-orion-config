@@ -1,6 +1,6 @@
 {
     "name": "@kaykyramos/eslint-config",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "description": "ESLint configuration used by Orion Tech Team.",
     "main": "index.js",
     "license": "MIT",
