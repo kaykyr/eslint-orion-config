@@ -30,6 +30,7 @@ module.exports = {
         alphabetize: { order: "asc", ignoreCase: true },
       },
     ],
+    "no-template-curly-in-string": "off",
     "no-useless-constructor": "off",
     "no-new": "off",
     camelcase: "off",
