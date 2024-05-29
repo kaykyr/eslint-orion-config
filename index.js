@@ -35,6 +35,7 @@ module.exports = {
     "no-new": "off",
     camelcase: "off",
     "no-void": "off",
+    "no-undef": "off",
     "no-prototype-builtins": "off",
     "no-unused-vars": "off",
     "no-useless-escape": "off",
