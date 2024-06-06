@@ -18,18 +18,7 @@ module.exports = {
   plugins: ["@typescript-eslint", "prettier", "import-helpers"],
   rules: {
     "prettier/prettier": "error",
-    "import-helpers/order-imports": [
-      "warn",
-      {
-        newlinesBetween: "always",
-        groups: [
-          ["module", "absolute"],
-          "/^@/",
-          ["parent", "sibling", "index"],
-        ],
-        alphabetize: { order: "asc", ignoreCase: true },
-      },
-    ],
+    "import-helpers/order-imports": "off",
     "no-template-curly-in-string": "off",
     "no-useless-constructor": "off",
     "no-new": "off",

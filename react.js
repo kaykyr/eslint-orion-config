@@ -38,18 +38,7 @@ module.exports = {
         img: ["Image"],
       },
     ],
-    "import-helpers/order-imports": [
-      "warn",
-      {
-        newlinesBetween: "always",
-        groups: [
-          ["module", "absolute"],
-          "/^@/",
-          ["parent", "sibling", "index"],
-        ],
-        alphabetize: { order: "asc", ignoreCase: true },
-      },
-    ],
+    "import-helpers/order-imports": "off",
     "no-useless-constructor": "off",
     "no-new": "off",
     camelcase: "off",
