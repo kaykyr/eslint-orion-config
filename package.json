@@ -1,6 +1,6 @@
 {
     "name": "@kaykyramos/eslint-config",
-    "version": "2.2.5",
+    "version": "3.0.0",
     "description": "ESLint configuration used by Orion Tech Team.",
     "main": "index.js",
     "license": "MIT",
@@ -29,8 +29,8 @@
         "prettier-plugin-tailwindcss": "^0.5.4"
     },
     "peerDependencies": {
-        "eslint": "^7.23.0 || ^8.0.0",
-        "typescript": ">=3.3.1"
+        "eslint": "^9.0.0",
+        "typescript": "<5.2.0"
     },
     "peerDependenciesMeta": {
         "typescript": {
